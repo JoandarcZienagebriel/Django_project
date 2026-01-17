@@ -19,8 +19,10 @@ DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 # ALLOWED_HOSTS read from environment variable, fallback to Render URL
 ALLOWED_HOSTS = os.environ.get(
-    "ALLOWED_HOSTS", "my-django-project-ynus.onrender.com"
+    "ALLOWED_HOSTS",
+    "my-django-project-ynus.onrender.com,.onrender.com,localhost,127.0.0.1"
 ).split(",")
+
 
 # --------------------------
 # APPLICATIONS
