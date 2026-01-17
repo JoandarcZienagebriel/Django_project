@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.urls import path
 from .views import (HaluView, HaluCreateView, Detail, HaluUpdateView, HaluDeleteView, Detail_ten,
  Grade_ten_create_view, Grade_ten_list_view, TenUpdateView, TenDeleteView)

@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.urls import path
 from .views import HomeView, BlogList, BlogDetail, AboutView,BlogCreate, BlogDelete, EuropeList,EuroBlogDetail, MessageView
 
