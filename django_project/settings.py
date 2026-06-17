@@ -14,11 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # --------------------------
 # SECURITY
 # --------------------------
-SECRET_KEY = os.environ.get(
-    'SECRET_KEY',
-    'django-insecure-local-development-key'
-)  # must be set in Render environment
-DEBUG = os.environ.get("DEBUG", "True") == "True"
+SECRET_KEY = os.environ['SECRET_KEY']  # must be set in Render environment
+DEBUG = os.environ.get("DEBUG", "False") == "True"
+
 
 # ALLOWED_HOSTS read from environment variable, fallback to Render URL
 ALLOWED_HOSTS = ['*']
