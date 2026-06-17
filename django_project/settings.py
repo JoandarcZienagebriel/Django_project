@@ -3,6 +3,7 @@ Django settings for django_project project (Render-ready).
 """
 
 import os
+from django.contrib.auth import get_user_model
 from pathlib import Path
 import dj_database_url  # Make sure this is in requirements.txt
 
@@ -21,6 +22,20 @@ DEBUG = os.environ.get("DEBUG", "False") == "True"
 # ALLOWED_HOSTS read from environment variable, fallback to Render URL
 ALLOWED_HOSTS = ['*']
 
+
+def create_default_admin():
+    User = get_user_model()
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser(
+            username="admin",
+            email="admin@example.com",
+            password="admin1234"
+        )
+
+try:
+    create_default_admin()
+except Exception:
+    pass
 
 
 # --------------------------

@@ -14,3 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')
 
 application = get_wsgi_application()
+from django.conf import settings
+if settings.DEBUG is False:
+    from django_project.settings import create_default_admin
+    create_default_admin()
