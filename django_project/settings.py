@@ -23,19 +23,6 @@ DEBUG = os.environ.get("DEBUG", "False") == "True"
 ALLOWED_HOSTS = ['*']
 
 
-def create_default_admin():
-    User = get_user_model()
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser(
-            username="admin",
-            email="admin@example.com",
-            password="admin1234"
-        )
-
-try:
-    create_default_admin()
-except Exception:
-    pass
 
 
 # --------------------------
