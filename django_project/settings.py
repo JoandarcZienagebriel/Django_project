@@ -81,14 +81,9 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # DATABASE (PostgreSQL recommended for Render)
 # --------------------------
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
-        "HOST": os.environ.get("DB_HOST"),
-        "PORT": "5432",
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('postgresql://adventuresus_blog_db_user:9CIIRT2KJI0Qnh8B3plowAU48ReVNjen@dpg-d8q054q8qa3s73brifrg-a.oregon-postgres.render.com/adventuresus_blog_db')
+    )
 }
 
 
