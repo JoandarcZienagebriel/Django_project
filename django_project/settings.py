@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # --------------------------
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('postgresql://adventuresus_blog_db_user:9CIIRT2KJI0Qnh8B3plowAU48ReVNjen@dpg-d8q054q8qa3s73brifrg-a.oregon-postgres.render.com/adventuresus_blog_db')
+        default=os.getenv('DATABASE_URL')
     )
 }
 
@@ -109,7 +109,7 @@ USE_TZ = True
 # STATIC FILES
 # --------------------------
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
