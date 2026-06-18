@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # --------------------------
 # SECURITY
 # --------------------------
-SECRET_KEY = os.environ['SECRET_KEY']  # must be set in Render environment
+SECRET_KEY = os.environ['l3tfwr0$on2md(idvp_*_xxyd*oo#7!n_lc#138n_nnmk5g!_#']  # must be set in Render environment
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 
