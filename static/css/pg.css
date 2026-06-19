@@ -166,7 +166,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 350px));
   gap: 1rem;
-  margin: auto;
+  justify-content: center;
 }
 
 .card {
@@ -361,9 +361,7 @@ gap: 0.003rem;
     width: 38%;
   
   }
-.columns{
-  margin: auto;
-}
+
   .about-section{
     display: flex;
     flex-direction: row;

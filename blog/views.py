@@ -15,7 +15,7 @@ class HomeView(ListView):
 class BlogList(ListView):
     template_name="list.html"
     model= BookReview
-    paginate_by = 4
+    paginate_by = 3
 
     
 class CommentGet(LoginRequiredMixin, DetailView):
@@ -79,7 +79,7 @@ class BlogDelete(UserPassesTestMixin, DeleteView):
 class EuropeList(ListView):
     template_name="Europelist.html"
     model= Europe
-    paginate_by = 4
+    paginate_by = 3
 
 
     
