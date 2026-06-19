@@ -43,10 +43,10 @@ INSTALLED_APPS = [
 ]
 
 cloudinary.config(
-   CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": "dycacj173",
-    "API_KEY": "271825921642587",
-    "API_SECRET": "crAm5Wl5qQVLQxMSGnned_CRjJs",
+    CLOUDINARY_STORAGE = {
+        "CLOUD_NAME": "dycacj173",
+        "API_KEY": "271825921642587",
+        "API_SECRET": "crAm5Wl5qQVLQxMSGnned_CRjJs",
 }
     secure=True
 )
