@@ -11,7 +11,6 @@ class BookReview(models.Model):
     )
     body=models.TextField()
     image = models.ImageField(upload_to='destinations/', default='defaults/no-image.png')
-    paginate_by = 4
     def __str__(self):
         return self.title
     
@@ -41,7 +40,6 @@ class Europe(models.Model):
     )
     body=models.TextField()
     image = models.ImageField(upload_to='destinations/', default='defaults/no-image.png')
-    paginate_by = 4
     def __str__(self):
         return self.title
 
