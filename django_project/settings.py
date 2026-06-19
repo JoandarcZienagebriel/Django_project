@@ -43,9 +43,11 @@ INSTALLED_APPS = [
 ]
 
 cloudinary.config(
-    cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
-    api_key=os.getenv("CLOUDINARY_API_KEY"),
-    api_secret=os.getenv("CLOUDINARY_API_SECRET"),
+   CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": "dycacj173",
+    "API_KEY": "271825921642587",
+    "API_SECRET": "crAm5Wl5qQVLQxMSGnned_CRjJs",
+}
     secure=True
 )
 
