@@ -361,7 +361,9 @@ gap: 0.003rem;
     width: 38%;
   
   }
-.columns
+.columns{
+  margin: auto;
+}
   .about-section{
     display: flex;
     flex-direction: row;
