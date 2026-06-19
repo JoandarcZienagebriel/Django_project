@@ -285,7 +285,9 @@ gap: 0.003rem;
 /* =========================
    SECTION
 ========================= */
-
+.content{
+  padding: 4rem 1.5rem;
+}
 
 
 
@@ -411,7 +413,7 @@ gap: 0.003rem;
 
 }
 @media screen and (min-width: 1024px) {
-
+.content{padding: 5rem 3rem;}
   .body{
   width: 60%;
   line-height: 2rem;
