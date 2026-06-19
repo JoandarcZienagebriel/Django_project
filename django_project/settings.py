@@ -6,7 +6,7 @@ import os
 from django.contrib.auth import get_user_model
 from pathlib import Path
 import dj_database_url  # Make sure this is in requirements.txt
-
+import cloudinary
 # --------------------------
 # BASE DIRECTORY
 # --------------------------
