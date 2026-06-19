@@ -318,15 +318,15 @@ gap: 0.003rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0%;
+    padding: 0%;
     width: 100%;
   }
 
   .nav-items {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
     gap: 1rem;
   }
 
