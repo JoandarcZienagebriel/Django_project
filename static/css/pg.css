@@ -351,7 +351,9 @@ gap: 0.003rem;
     padding-top: 8rem;
     padding-bottom: 12em;
   }
-
+.columns{
+  justify-content: center;
+}
   .sidebar,
   .link_content {
     display: flex;
